@@ -8,8 +8,6 @@
 
 <div id="buttons"></div>
 
-<link href="assets/css/picker.css" rel="stylesheet">
-
 <script src="assets/js/picker.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146795359-2"></script>
