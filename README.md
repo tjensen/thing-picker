@@ -130,3 +130,12 @@ button:not(:last-child) {
   margin-right: 4px;
 }
 </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146795359-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146795359-2');
+</script>
