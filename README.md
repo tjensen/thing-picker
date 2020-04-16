@@ -114,6 +114,10 @@ input {
   margin-bottom: 4px;
 }
 
+input::placeholder {
+  color: #dddddd;
+}
+
 div#buttons {
   margin-top: 16px;
 }
