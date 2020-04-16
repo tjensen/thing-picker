@@ -131,6 +131,8 @@ button:not(:last-child) {
 }
 </style>
 
+<script src="assets/js/picker.js"></script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146795359-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
