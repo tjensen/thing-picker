@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# Thing Picker
 
-You can use the [editor on GitHub](https://github.com/tjensen/thing-picker/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<div id="your-pick"></div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Things
 
-### Markdown
+<div id="choices"></div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<div id="buttons"></div>
 
-```markdown
-Syntax highlighted code block
+<script src="picker.js"></script>
+<style>
 
-# Header 1
-## Header 2
-### Header 3
+#your-pick {
+  text-align: center;
+}
 
-- Bulleted
-- List
+#your-pick-text {
+  font-size: 150%;
+  font-weight: bold;
+  margin-left: 8px;
+}
 
-1. Numbered
-2. List
+input {
+  display: block;
+  width: 50%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
 
-**Bold** and _Italic_ and `Code` text
+div#buttons {
+  margin-top: 16px;
+}
 
-[Link](url) and ![Image](src)
-```
+button:not(:first-child) {
+  margin-left: 4px;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tjensen/thing-picker/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+button:not(:last-child) {
+  margin-right: 4px;
+}
+</style>
