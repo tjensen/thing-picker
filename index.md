@@ -1,3 +1,6 @@
+---
+title: Thing Picker
+---
 # Thing Picker
 
 <div id="your-pick"></div>
