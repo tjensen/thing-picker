@@ -39,16 +39,41 @@
     addChoice();
   }
 
+  const yourPick = document.getElementById('your-pick');
+
+  function showPick(pickValue) {
+      yourPick.innerHTML = 'Your pick is:';
+
+      const pick = Math.floor(Math.random() * Math.floor(numChoices));
+
+      const pickText = document.createElement('div');
+      pickText.setAttribute('id', 'your-pick-text');
+      pickText.innerText = pickValue
+      yourPick.appendChild(pickText);
+  }
+
+  function onTimer(remaining) {
+    if (remaining <= 0) {
+      const pick = Math.floor(Math.random() * Math.floor(numChoices));
+      showPick(document.getElementById('thing-' + pick).value);
+    }
+    else
+    {
+      setTimeout(function() {
+        onTimer(remaining - 1);
+      }, 50);
+
+      let pickText = ''
+      for (let i = 0; i < 20; i++) {
+        pickText += String.fromCharCode(Math.floor(Math.random() * 3) + 0x2591)
+      }
+
+      showPick(pickText);
+    }
+  }
+
   function onPick() {
-    const pick = Math.floor(Math.random() * Math.floor(numChoices));
-
-    const yourPick = document.getElementById('your-pick');
-    yourPick.innerHTML = 'Your pick is:';
-
-    const pickText = document.createElement('div');
-    pickText.setAttribute('id', 'your-pick-text');
-    pickText.innerText = document.getElementById('thing-' + pick).value;
-    yourPick.appendChild(pickText);
+    onTimer(20);
   }
 
   function onAddAnother() {
