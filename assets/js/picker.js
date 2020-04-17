@@ -65,7 +65,7 @@
 
       let pickText = ''
       for (let i = 0; i < 20; i++) {
-        pickText += String.fromCharCode(Math.floor(Math.random() * 3) + 0x2591)
+        pickText += String.fromCharCode(Math.floor(Math.random() * 9) + 0x2596)
       }
 
       showPick(pickText);
