@@ -72,8 +72,17 @@
     }
   }
 
+  function getShareCode() {
+    const choiceTexts = [];
+    for (let i = 0; i < numChoices; i++) {
+      choiceTexts.push(document.getElementById('thing-' + i).value);
+    }
+    return btoa(choiceTexts.join('\0')).replace(/=+$/, '');
+  }
+
   function onPick() {
     onTimer(20);
+    gtag('event', 'pick', {event_label: getShareCode()});
   }
 
   function onAddAnother() {
