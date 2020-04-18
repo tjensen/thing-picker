@@ -95,6 +95,7 @@
       choiceTexts.push(document.getElementById('thing-' + i).value);
     }
     const code = btoa(choiceTexts.join('\0')).replace(/=+$/, '');
+    gtag('event', 'share', {event_label: code});
     window.location.search = '?share=' + code;
   }
 
