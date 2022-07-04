@@ -13,11 +13,11 @@ title: Thing Picker
 
 <script src="assets/js/picker.js"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146795359-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DCE2QT80YP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-146795359-2');
+  gtag('config', 'G-DCE2QT80YP');
 </script>
